@@ -156,7 +156,7 @@ header {
   /* Cor branca com 50% de opacidade como overlay */
 }
 
-.servico {
+.main-pai > div > .title {
   font-weight: 800;
   color: #ffffff;
   font-size: 28px;
@@ -366,14 +366,13 @@ ul {
   margin-top: 54px;
   color: #999;
 }
-#dialog-servicos{
+#dialog-servicos {
   margin-inline: auto;
   margin-top: auto;
   margin-bottom: auto;
   border: none;
-
 }
-#dialog-servicos::backdrop{
+#dialog-servicos::backdrop {
   background: #00000050;
 }
 
@@ -399,7 +398,6 @@ ul {
   padding: 15px 30px;
 }
 
-
 .filho-servico > h3 {
   font-size: 18px;
   line-height: 1.2;
@@ -408,7 +406,7 @@ ul {
   padding: 10px 0px 10px;
 }
 
-.combos {
+.servico-item {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   display: flex;
@@ -425,10 +423,10 @@ ul {
   font-weight: 500;
   z-index: 1;
 }
-.combos > span {
+.servico-item > span {
   white-space: nowrap;
 }
-.combos:hover {
+.servico-item:hover {
   border-color: #000;
   transform: scale(1.04); /* Aumenta o tamanho */
 }
@@ -465,6 +463,28 @@ ul {
   display: none;
 }
 
-.arrow:hover {
+.servico-voltar:hover {
   transform: scale(1.04);
+}
+.servico-voltar {
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  /* display: flex;
+  justify-content: space-between; */
+  position: absolute;
+  bottom: 0px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.servico-voltar > span {
+  text-decoration: none;
+  color: #111;
+}
+
+.servico-voltar > span > i {
+  color: #111;
+  font-size: 14px;
+  padding-right: 10px;
+  cursor: pointer;
 }

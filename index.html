@@ -63,7 +63,7 @@
     </section>
     <main class="main-pai">
       <div>
-        <h1 class="servico">SERVIÇOS</h1>
+        <h1 class="title">SERVIÇOS</h1>
       </div>
 
       <div class="card-servicos">
@@ -234,25 +234,25 @@
                           id="btn-close"
                         ></button>
                       </div>
-                      <div class="combos ComBos" id="COMBO-CLICK">
+                      <div class="servico-item ComBos" id="servico-combo">
                         <div class="img-combo">
                           <img src="./assets/combos.jpg" alt="" />
                         </div>
                         <div style="margin-right: 140px">COMBOS</div>
                       </div>
-                      <div class="combos ComBos" id="cabelo-click">
+                      <div class="servico-item ComBos" id="servico-cabelo">
                         <div class="img-combo">
                           <img src="./assets/cabelo.jpg" alt="" />
                         </div>
                         <div style="margin-right: 140px">CABELO</div>
                       </div>
-                      <div class="combos ComBos">
+                      <div class="servico-item ComBos">
                         <div class="img-combo">
                           <img src="./assets/barba.jpg" alt="" />
                         </div>
                         <div style="margin-right: 140px">BARBA</div>
                       </div>
-                      <div class="combos ComBos">
+                      <div class="servico-item ComBos">
                         <div class="img-combo">
                           <img src="./assets/sobrancelha.jpg" alt="" />
                         </div>
@@ -260,91 +260,44 @@
                       </div>
                       <div class="hidden click-combos">
                         <div
-                          class="opcao-combos justify-content-between combos"
+                          class="opcao-combos justify-content-between servico-item"
                         >
                           <span>Corte + Barba</span>
                           <span> R$ 40,00</span>
                         </div>
                         <div
-                          class="opcao-combos justify-content-between combos"
+                          class="opcao-combos justify-content-between servico-item"
                         >
                           <span>Corte + Sobrancelha</span>
                           <span> R$ 35,00</span>
                         </div>
                         <div
-                          class="opcao-combos justify-content-between combos"
+                          class="opcao-combos justify-content-between servico-item"
                         >
                           <span>Corte + Barba + Sobrancelha</span>
                           <span> R$ 60,00</span>
                         </div>
                         <div
-                          class="opcao-combos justify-content-between combos"
+                          class="opcao-combos justify-content-between servico-item"
                         >
                           <span>Corte + Pigmentação</span>
                           <span> R$ 50,00</span>
                         </div>
-                        <div
-                          id="arrow"
-                          style="
-                            padding: 10px;
-                            border-top: 1px solid rgba(0, 0, 0, 0.05);
-                            display: flex;
-                            justify-content: space-between;
-                            position: absolute;
-                            bottom: 0px;
-                            background-color: #fff;
-                            cursor: pointer;
-                          "
-                        >
+                        <div id="voltar-combos" class="servico-voltar hidden">
                           <span
-                            href=""
-                            style="text-decoration: none; color: #111"
-                            ><i
-                              class="material-icons arrow"
-                              style="
-                                color: #111;
-                                font-size: 14px;
-                                padding-right: 10px;
-                                cursor: pointer;
-                              "
-                              >west</i
-                            >
+                            ><i class="material-icons arrow">west</i>
                             Voltar</span
                           >
                         </div>
                       </div>
-                      <div class="combos click-cabelo hidden">
+                      <div class="servico-item justify-content-between itens-servico-cabelo hidden" >
                         <span>Corte na Máquina</span>
                         <span> R$ 20,00</span>
-                        <div
-                        id="arrow"
-                        style="
-                          padding: 10px;
-                          border-top: 1px solid rgba(0, 0, 0, 0.05);
-                          display: flex;
-                          justify-content: space-between;
-                          position: absolute;
-                          bottom: 0px;
-                          background-color: #fff;
-                          cursor: pointer;
-                        "
-                      >
-                        <span
-                          href=""
-                          style="text-decoration: none; color: #111"
-                          ><i
-                            class="material-icons arrow"
-                            style="
-                              color: #111;
-                              font-size: 14px;
-                              padding-right: 10px;
-                              cursor: pointer;
-                            "
-                            >west</i
-                          >
-                          Voltar</span
-                        >
                       </div>
+                      <div id="voltar-cortes" class="servico-voltar hidden">
+                        <span
+                          ><i class="material-icons arrow">west</i> Voltar</span
+                        >
                       </div>
                     </div>
                   </div>
