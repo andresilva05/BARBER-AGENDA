@@ -426,6 +426,15 @@ ul {
 .servico-item > span {
   white-space: nowrap;
 }
+/* .servico-item > span > span{
+      color: #9a9a9a;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+} */
+#pai-servico-item {
+  padding: 60px 0px 0px 0px;
+}
 .servico-item:hover {
   border-color: #000;
   transform: scale(1.04); /* Aumenta o tamanho */
