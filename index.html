@@ -219,6 +219,21 @@
                         agendar um horário.
                       </p>
                     </div>
+                    <div
+                      id="left-filho-click-corte"
+                      class="pai-left-livro hidden"
+                    >
+                      <img
+                        style="width: 80px; height: 80px"
+                        src="./assets/carrinho-de-compras.png"
+                        alt=""
+                      />
+                      <h3>Serviços Adicionais</h3>
+                      <p style="font-size: 14px">
+                        Selecione serviços adicionais caso <br />queira incluir
+                        no agendamento.
+                      </p>
+                    </div>
                     <div class="duvidas">
                       <p>Dúvidas?</p>
                       <p>Fale conosco!</p>
@@ -234,25 +249,37 @@
                           id="btn-close"
                         ></button>
                       </div>
-                      <div class="servico-item function-combo" id="servico-combo">
+                      <div
+                        class="servico-item function-combo"
+                        id="servico-combo"
+                      >
                         <div class="img-combo">
                           <img src="./assets/combos.jpg" alt="" />
                         </div>
                         <div style="margin-right: 140px">COMBOS</div>
                       </div>
-                      <div class="servico-item function-combo" id="servico-cabelo">
+                      <div
+                        class="servico-item function-combo"
+                        id="servico-cabelo"
+                      >
                         <div class="img-combo">
                           <img src="./assets/cabelo.jpg" alt="" />
                         </div>
                         <div style="margin-right: 140px">CABELO</div>
                       </div>
-                      <div class="servico-item function-combo">
+                      <div
+                        class="servico-item function-combo"
+                        id="servico-barba"
+                      >
                         <div class="img-combo">
                           <img src="./assets/barba.jpg" alt="" />
                         </div>
                         <div style="margin-right: 140px">BARBA</div>
                       </div>
-                      <div class="servico-item function-combo">
+                      <div
+                        class="servico-item function-combo"
+                        id="servico-sobrancelha"
+                      >
                         <div class="img-combo">
                           <img src="./assets/sobrancelha.jpg" alt="" />
                         </div>
@@ -260,6 +287,7 @@
                       </div>
                       <div class="hidden click-combos">
                         <div
+                          id="click-corteEbarba"
                           class="opcao-combos justify-content-between servico-item"
                         >
                           <span>Corte + Barba</span>
@@ -290,22 +318,112 @@
                           >
                         </div>
                       </div>
+
                       <div id="pai-servico-item">
-                      <div class="servico-item justify-content-between itens-servico-cabelo hidden" >
-                        <span>Corte na Máquina</span>
-                        <span> R$ 20,00</span>
+                        <div
+                          class="servico-item justify-content-between itens-servico-cabelo hidden"
+                        >
+                          <span>Corte na Máquina</span>
+                          <span> R$ 20,00</span>
+                        </div>
+                        <div
+                          class="servico-item justify-content-between itens-servico-cabelo hidden"
+                        >
+                          <span>Corte Social</span>
+                          <span> R$ 25,00</span>
+                        </div>
+                        <div
+                          class="servico-item justify-content-between itens-servico-cabelo hidden"
+                        >
+                          <span>Corte Degradê Navalhado</span>
+                          <!-- <p id="observacao-servico">A partir de R$ 40,00.</p> -->
+                          <span> R$ 40,00</span>
+                        </div>
                       </div>
-                      <div class="servico-item justify-content-between itens-servico-cabelo hidden" >
-                        <span>Corte Social</span>
-                        <span> R$ 25,00</span>
+                      <div id="voltar-cortes" class="servico-voltar hidden">
+                        <span
+                          ><i class="material-icons arrow">west</i> Voltar</span
+                        >
                       </div>
-                      <div class="servico-item justify-content-between itens-servico-cabelo hidden" >
-                        <span>Corte Degradê Navalhado</span>
-                        <!-- <p id="observacao-servico">A partir de R$ 40,00.</p> -->
-                        <span> R$ 40,00</span>
+
+                      <div class="filho-click-barba hidden">
+                        <div class="servico-item justify-content-between">
+                          <span>Barba</span>
+                          <span> R$ 20,00</span>
+                        </div>
+                        <div class="servico-item justify-content-between">
+                          <span>Barboterapia</span>
+                          <span> R$ 30,00</span>
+                        </div>
+                        <div class="servico-item justify-content-between">
+                          <span>Barba Desenhada</span>
+                          <span> R$ 30,00</span>
+                        </div>
+                        <div id="voltar-barba" class="servico-voltar hidden">
+                          <span
+                            ><i class="material-icons arrow">west</i>
+                            Voltar</span
+                          >
+                        </div>
+                      </div>
+                      <div class="filho-click-sobrancelha hidden">
+                        <div class="servico-item justify-content-between">
+                          <span>Sobrancelha</span>
+                          <span> R$ 10,00</span>
+                        </div>
+                        <div
+                          id="voltar-sobrancelha"
+                          class="servico-voltar hidden"
+                        >
+                          <span
+                            ><i class="material-icons arrow">west</i>
+                            Voltar</span
+                          >
+                        </div>
                       </div>
                     </div>
-                      <div id="voltar-cortes" class="servico-voltar hidden">
+                    <div class="newServicosCorte hidden">
+                      <div>
+                        <input class="checkbox"
+                          type="checkbox"
+                          style="
+                            border-radius: 4px;
+                            background-color: #fff;
+                            color: #fff;
+                            padding: 3px;
+                            width: 18px;
+                            height: 18px;
+                            cursor: pointer;
+                          "
+                        />
+                      </div>
+                      <div style="text-align: left">
+                        <h3 style="font-size: 16px">Corte Infantil</h3>
+                        <p style="color: #9a9a9a; font-size: 12px">
+                          Inclua um corte adicional para <br />seu filho.
+                        </p>
+                      </div>
+                      <div>
+                        <span>R$ 30,00</span>
+                      </div>
+                      <div style="display: flex; align-items: center">
+                        <button class="remover-servico-adicional">-</button>
+
+                        <input
+                          class="input"
+                          type="text"
+                          name=""
+                          id=""
+                          value="0"
+                          placeholder="Qnt."
+                        />
+                        <button class="adicionar-servico-adicional">+</button>
+                      </div>
+
+                      <div
+                        id="voltar-servico-cortes"
+                        class="servico-voltar hidden"
+                      >
                         <span
                           ><i class="material-icons arrow">west</i> Voltar</span
                         >
